@@ -27,30 +27,49 @@
 
 # Instructions
 
-## How to flash the keyboard & use the layout
+## Generating keymap.c and flashing the keyboard
 
-(key, or the pins)
+- Clone the repo and run `make`. Make sure python3 is installed.
+- When prompted, put the keyboard into bootloader mode. There are several
+  ways of doing this:
+  - A button has been mapped to trigger the bootloader mode (on this config,
+    it's `CHG_LAY+top_right_key`; see the `BTLDR` button on [this
+    layout](static/media/other.jpg)).  
+  - Unplug the keyboard, press and hold `CTLR+B` and plug it back in.
+  - If none of the above methods work, you need to short the RESET pin on the
+    ATmega chip. See [Resources](#resources). Use a clipper or a staple to
+    connect pin 13 and 43.
+- Congrats! That should be it.
 
 ## How to update layers.json
 
-(use the gui, update the url and the content)
+- Use [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/) to
+  mimic the keyboard configuration.
+- Insert a character at the bottom of the key for a normal tap and at the top
+  for a Shift+tap.
+- When finished,
+    1. Copy the permalink and add it to `static/layers.json` under a
+       `"URL"` key.
+    2. Download the layout as a JSON and copy/paste it in
+       `static/layers.json` under the `layout` key.
 
-## How to update the list of supported keys
+## [WIP] How to update the list of supported keys
 
-(play with convert_json.py)
+- Make your way around the ugly `app/keycode_mapper.py`.
 
 # Specificities
 
-## Shift as a dedicated layer
+## [WIP] Shift as a dedicated layer
 
 reason, use
 
-## "Magic key" to change between layouts
+## [WIP] "Magic key" to change between layouts
 
 - how it works (held --> uses the "other" layer, tapped --> switch to colemak)
-- how it's implemented: process_record_user. see https://github.com/qmk/qmk_firmware/blob/master/docs/custom_quantum_functions.md#custom-keycodes
+- how it's implemented: process_record_user. see the [QMK
+  documentation](https://github.com/qmk/qmk_firmware/blob/master/docs/custom_quantum_functions.md#custom-keycodes)
 
-# To extend
+# [WIP] To extend
 
 - Azerty on the magic key?
 
@@ -66,4 +85,4 @@ reason, use
 - Sending Unicode characters requires [IBus](https://wiki.archlinux.org/index.php/IBus#Installation) to be running on your system. Make sure it is running all the time!
 - One dependency I was lacking was [PyGObject](https://pygobject.readthedocs.io/en/latest/getting_started.html) (`pip install PyGObject --user`)
 
-# Other bits
+# [WIP] Other bits
