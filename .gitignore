@@ -1,0 +1,4 @@
+keymap.c
+.python_is_ready
+pycache/
+*.pyc
