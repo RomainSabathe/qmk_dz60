@@ -1,6 +1,29 @@
 # Layers
+
+## Base
+
+![base_layer](static/media/base.jpg)
+
+## Colemak (tap on `CHG_LAY`)
+
+![colemak_layer](static/media/colemak.jpg)
+
+## Programmer (hold `HLD_PGRM`)
+
+![programmer_layer](static/media/programmer.jpg)
+
+## Keypad (hold `HLD_KPD`)
+
+![keypad_layer](static/media/keypad.jpg)
+
+## Media (hold `HLD_MED`)
+
+![media_layer](static/media/media.jpg)
+
+## Other (hold `CHG_LAY`)
+
+![other_layer](static/media/other.jpg)
  
-[screenshots]
 
 # Instructions
 
