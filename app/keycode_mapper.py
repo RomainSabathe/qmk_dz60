@@ -97,6 +97,7 @@ dict_keycode_mapper = {
     "chg_lay": "MAGIC_KEY",
     "hld_kpd": "MO(KEYPAD)",
     "hld_pgrm": "MO(PRGMR)",
+    "hld_cpgrm": "MO(CPRGMR)",
     "hld_med": "MO(MEDIA)",
     "": TRANSPARENT,
     "esc": ESCAPE,

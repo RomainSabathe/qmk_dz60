@@ -12,6 +12,10 @@
 
 ![programmer_layer](static/media/programmer.jpg)
 
+## Colemak Programmer (while in Colemak mode, hold `HLD_PGRM`)
+
+![programmer_layer](static/media/colemak_programmer.jpg)
+
 ## Keypad (hold `HLD_KPD`)
 
 ![keypad_layer](static/media/keypad.jpg)
@@ -44,7 +48,8 @@
 ## How to update layers.json
 
 - Use [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/) to
-  mimic the keyboard configuration.
+  mimic the keyboard configuration. Note: this website doesn't seem to support
+  quteBrowser.
 - Insert a character at the bottom of the key for a normal tap and at the top
   for a Shift+tap.
 - When finished,
@@ -52,6 +57,20 @@
        `"URL"` key.
     2. Download the layout as a JSON and copy/paste it in
        `static/layers.json` under the `layout` key.
+
+### Tips
+
+When hacking around, we can get a lot of `keyboard-layout.json` files
+laying around in the Downloads folder (I'm currently at 33 and counting). A
+quick way to parse the content of the latest downloaded file is to use this
+command:
+
+```bash
+xclip -selection clipboard ~/Downloads/keyboard-layout\ $(ls -lastr ~/Downloads | tail -n 3 | awk '/keyboard/ { print $11 }')
+```
+
+This assumes that each `keyboard-layout` file has the following structure:
+`keyboard-layout (33).json` (and 33 is dynamic).
 
 ## How to update the list of supported keys
 
@@ -61,12 +80,21 @@
 
 ## Shift as a dedicated layer
 
-In this implementation, Shift is not used in a standard manner. Instead of sending a "SHIFT" message, it changes layer entirely. This can cause unexpected behaviours like:
+In this implementation, Shift is not used in a standard manner. Instead of
+sending a "SHIFT" message, it changes layer entirely.  
+On the one hand, this
+allows to define completely new keys. For instance, we can define a key
+where `{` is the behaviour in lowercase, and `(` is the behaviour in upper
+case. Try finding that key on a normal keyboard,... it doesn't exist!  
+But on the other hand, it can also cause unexpected behaviours like:
 
-- In software like Gimp or Google Presentations, holding Shift and clicking on multiple objects to select them all won't work.
+- In software like Gimp or Google Presentations, holding Shift and clicking on
+  multiple objects to select them all won't work. It's as is `Shift` is not
+  pressed.
 - If used in combination with other layers (like the PGRM layer), the keyboard can sometimes get stuck in "Shift" layer. Hitting Ctrl+w to close 1 tab in your browser will actually close the entire browser, as if Ctrl+Shift+w had been pressed.
 
-This two things alone are fairly cumbersome so I might change this in the future.
+These two things alone are fairly cumbersome so I might drop the idea of "Shift
+as a layer" in the future.
 
 ## [WIP] "Magic key" to change between layouts
 
