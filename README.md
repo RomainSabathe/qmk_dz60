@@ -53,15 +53,20 @@
     2. Download the layout as a JSON and copy/paste it in
        `static/layers.json` under the `layout` key.
 
-## [WIP] How to update the list of supported keys
+## How to update the list of supported keys
 
 - Make your way around the ugly `app/keycode_mapper.py`.
 
 # Specificities
 
-## [WIP] Shift as a dedicated layer
+## Shift as a dedicated layer
 
-reason, use
+In this implementation, Shift is not used in a standard manner. Instead of sending a "SHIFT" message, it changes layer entirely. This can cause unexpected behaviours like:
+
+- In software like Gimp or Google Presentations, holding Shift and clicking on multiple objects to select them all won't work.
+- If used in combination with other layers (like the PGRM layer), the keyboard can sometimes get stuck in "Shift" layer. Hitting Ctrl+w to close 1 tab in your browser will actually close the entire browser, as if Ctrl+Shift+w had been pressed.
+
+This two things alone are fairly cumbersome so I might change this in the future.
 
 ## [WIP] "Magic key" to change between layouts
 
@@ -69,7 +74,7 @@ reason, use
 - how it's implemented: process_record_user. see the [QMK
   documentation](https://github.com/qmk/qmk_firmware/blob/master/docs/custom_quantum_functions.md#custom-keycodes)
 
-# [WIP] To extend
+# Backlog
 
 - Azerty on the magic key?
 
@@ -84,5 +89,3 @@ reason, use
 
 - Sending Unicode characters requires [IBus](https://wiki.archlinux.org/index.php/IBus#Installation) to be running on your system. Make sure it is running all the time!
 - One dependency I was lacking was [PyGObject](https://pygobject.readthedocs.io/en/latest/getting_started.html) (`pip install PyGObject --user`)
-
-# [WIP] Other bits
