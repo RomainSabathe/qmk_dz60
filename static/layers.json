@@ -1,165 +1,164 @@
 {
   "BASE": {
-    "url": "http://www.keyboard-layout-editor.com/##@@_c=%23ff5c5c&a:7%3B&=ESC&_c=%23cccccc&a:5%3B&=!%0A1&=%2F@%0A2&=%23%0A3&=$%0A4&=%25%0A5&=%5E%0A6&=%2F&%0A7&=*%0A8&=(%0A9&=)%0A0&=%2F_%0A-&=+%0A%2F=&=~%0A%60&=%7C%0A%5C%3B&@_a:7&w:1.5%3B&=Tab&=Q&=W&=E&=R&=T&=Y&=U&=I&=O&=P&_a:5%3B&=%7B%0A%5B&=%7D%0A%5D&_w:1.5%3B&=DEL%0ABACKSPC%3B&@_a:7&w:1.75%3B&=HYPER&=A&=S&=D&=F&=G&=H&=J&=K&=L&_a:5%3B&=%2F:%0A%2F%3B&=%22%0A'&_c=%231865c4&a:7&w:2.25%3B&=ENT%3B&@_c=%23cccccc&w:2.25%3B&=L-Shift&=Z&=X&=C&=V&=B&=N&=M&_a:5%3B&=%3C%0A,&=%3E%0A.&=%3F%0A%2F%2F&_a:7&w:1.75%3B&=R-Shift&_c=%2319bfbf&f:1%3B&=CHG%2F_LAY%3B&@_c=%23cccccc&f:3&w:1.25%3B&=Ctrl&_c=%2319bfbf&f:2&w:1.25%3B&=HLD%2F_KPD&_c=%23cccccc&f:3&w:1.25%3B&=ALT&_w:2.25%3B&=SPC&_c=%2319bfbf&f:2&w:1.25%3B&=HLD%2F_PGRM&_c=%23cccccc&f:3&w:2.75%3B&=SPC&_c=%2319bfbf&f:1%3B&=HLD%2F_MED&_c=%23cccccc&a:5%3B&=HOME%0A%3Ci%20class%2F='kb%20kb-Arrows-Left'%3E%3C%2F%2Fi%3E&=PGDN%0A%3Ci%20class%2F='kb%20kb-Arrows-Down'%3E%3C%2F%2Fi%3E&=PGUP%0A%3Ci%20class%2F='kb%20kb-Arrows-Up'%3E%3C%2F%2Fi%3E&=END%0A%3Ci%20class%2F='kb%20kb-Arrows-Right'%3E%3C%2F%2Fi%3E",
-    "layout": [
-      [
-        {
-          "c": "#ff5c5c",
-          "a": 7
-        },
-        "ESC",
-        {
-          "c": "#cccccc",
-          "a": 5
-        },
-        "!\n1",
-        "@\n2",
-        "#\n3",
-        "$\n4",
-        "%\n5",
-        "^\n6",
-        "&\n7",
-        "*\n8",
-        "(\n9",
-        ")\n0",
-        "_\n-",
-        "+\n=",
-        "~\n`",
-        "|\n\\"
-      ],
-      [
-        {
-          "a": 7,
-          "w": 1.5
-        },
-        "Tab",
-        "Q",
-        "W",
-        "E",
-        "R",
-        "T",
-        "Y",
-        "U",
-        "I",
-        "O",
-        "P",
-        {
-          "a": 5
-        },
-        "{\n[",
-        "}\n]",
-        {
-          "w": 1.5
-        },
-        "DEL\nBACKSPC"
-      ],
-      [
-        {
-          "a": 7,
-          "w": 1.75
-        },
-        "HYPER",
-        "A",
-        "S",
-        "D",
-        "F",
-        "G",
-        "H",
-        "J",
-        "K",
-        "L",
-        {
-          "a": 5
-        },
-        ":\n;",
-        "\"\n'",
-        {
-          "c": "#1865c4",
-          "a": 7,
-          "w": 2.25
-        },
-        "ENT"
-      ],
-      [
-        {
-          "c": "#cccccc",
-          "w": 2.25
-        },
-        "L-Shift",
-        "Z",
-        "X",
-        "C",
-        "V",
-        "B",
-        "N",
-        "M",
-        {
-          "a": 5
-        },
-        "<\n,",
-        ">\n.",
-        "?\n/",
-        {
-          "a": 7,
-          "w": 1.75
-        },
-        "R-Shift",
-        {
-          "c": "#19bfbf",
-          "f": 1
-        },
-        "CHG_LAY"
-      ],
-      [
-        {
-          "c": "#cccccc",
-          "f": 3,
-          "w": 1.25
-        },
-        "Ctrl",
-        {
-          "c": "#19bfbf",
-          "f": 2,
-          "w": 1.25
-        },
-        "HLD_KPD",
-        {
-          "c": "#cccccc",
-          "f": 3,
-          "w": 1.25
-        },
-        "ALT",
-        {
-          "w": 2.25
-        },
-        "SPC",
-        {
-          "c": "#19bfbf",
-          "f": 2,
-          "w": 1.25
-        },
-        "HLD_PGRM",
-        {
-          "c": "#cccccc",
-          "f": 3,
-          "w": 2.75
-        },
-        "SPC",
-        {
-          "c": "#19bfbf",
-          "f": 1
-        },
-        "HLD_MED",
-        {
-          "c": "#cccccc",
-          "a": 5
-        },
-        "HOME\n<i class='kb kb-Arrows-Left'></i>",
-        "PGDN\n<i class='kb kb-Arrows-Down'></i>",
-        "PGUP\n<i class='kb kb-Arrows-Up'></i>",
-        "END\n<i class='kb kb-Arrows-Right'></i>"
-      ]
-    ]
+    "url": "http://www.keyboard-layout-editor.com/##@@_c=%23ff5c5c&a:7%3B&=ESC&_c=%23cccccc&a:5%3B&=!%0A1&=%2F@%0A2&=%23%0A3&=$%0A4&=%25%0A5&=%5E%0A6&=%2F&%0A7&=*%0A8&=(%0A9&=)%0A0&=%2F_%0A-&=+%0A%2F=&=~%0A%60&=%7C%0A%5C%3B&@_a:7&w:1.5%3B&=Tab&=Q&=W&=E&=R&=T&=Y&=U&=I&=O&=P&_a:5%3B&=%7B%0A%5B&=%7D%0A%5D&_w:1.5%3B&=DEL%0ABACKSPC%3B&@_a:7&w:1.75%3B&=HYPER&=A&=S&=D&=F&=G&=H&=J&=K&=L&_a:5%3B&=%2F:%0A%2F%3B&=%22%0A'&_c=%231865c4&a:7&w:2.25%3B&=ENT%3B&@_c=%23cccccc&w:2.25%3B&=L-Shift&=Z&=X&=C&=V&=B&=N&=M&_a:5%3B&=%3C%0A,&=%3E%0A.&=%3F%0A%2F%2F&_a:7&w:1.75%3B&=R-Shift&_c=%2319bfbf&f:1%3B&=CHG%2F_LAY%3B&@_c=%23cccccc&f:3&w:1.25%3B&=Ctrl&_f:2&w:1.25%3B&=SUPER&_f:3&w:1.25%3B&=ALT&_w:2.25%3B&=SPC&_c=%2319bfbf&f:2&w:1.25%3B&=HLD%2F_PGRM&_c=%23cccccc&f:3&w:2.75%3B&=SPC&_c=%2319bfbf&f:1%3B&=HLD%2F_MED&_c=%23cccccc&a:5%3B&=HOME%0A%3Ci%20class%2F='kb%20kb-Arrows-Left'%3E%3C%2F%2Fi%3E&=PGDN%0A%3Ci%20class%2F='kb%20kb-Arrows-Down'%3E%3C%2F%2Fi%3E&=PGUP%0A%3Ci%20class%2F='kb%20kb-Arrows-Up'%3E%3C%2F%2Fi%3E&=END%0A%3Ci%20class%2F='kb%20kb-Arrows-Right'%3E%3C%2F%2Fi%3E",
+    "layout": 
+[
+  [
+    {
+      "c": "#ff5c5c",
+      "a": 7
+    },
+    "ESC",
+    {
+      "c": "#cccccc",
+      "a": 5
+    },
+    "!\n1",
+    "@\n2",
+    "#\n3",
+    "$\n4",
+    "%\n5",
+    "^\n6",
+    "&\n7",
+    "*\n8",
+    "(\n9",
+    ")\n0",
+    "_\n-",
+    "+\n=",
+    "~\n`",
+    "|\n\\"
+  ],
+  [
+    {
+      "a": 7,
+      "w": 1.5
+    },
+    "Tab",
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    {
+      "a": 5
+    },
+    "{\n[",
+    "}\n]",
+    {
+      "w": 1.5
+    },
+    "DEL\nBACKSPC"
+  ],
+  [
+    {
+      "a": 7,
+      "w": 1.75
+    },
+    "HYPER",
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    {
+      "a": 5
+    },
+    ":\n;",
+    "\"\n'",
+    {
+      "c": "#1865c4",
+      "a": 7,
+      "w": 2.25
+    },
+    "ENT"
+  ],
+  [
+    {
+      "c": "#cccccc",
+      "w": 2.25
+    },
+    "L-Shift",
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    {
+      "a": 5
+    },
+    "<\n,",
+    ">\n.",
+    "?\n/",
+    {
+      "a": 7,
+      "w": 1.75
+    },
+    "R-Shift",
+    {
+      "c": "#19bfbf",
+      "f": 1
+    },
+    "CHG_LAY"
+  ],
+  [
+    {
+      "c": "#cccccc",
+      "f": 3,
+      "w": 1.25
+    },
+    "Ctrl",
+    {
+      "f": 2,
+      "w": 1.25
+    },
+    "SUPER",
+    {
+      "f": 3,
+      "w": 1.25
+    },
+    "ALT",
+    {
+      "w": 2.25
+    },
+    "SPC",
+    {
+      "c": "#19bfbf",
+      "f": 2,
+      "w": 1.25
+    },
+    "HLD_PGRM",
+    {
+      "c": "#cccccc",
+      "f": 3,
+      "w": 2.75
+    },
+    "SPC",
+    {
+      "c": "#19bfbf",
+      "f": 1
+    },
+    "HLD_MED",
+    {
+      "c": "#cccccc",
+      "a": 5
+    },
+    "HOME\n<i class='kb kb-Arrows-Left'></i>",
+    "PGDN\n<i class='kb kb-Arrows-Down'></i>",
+    "PGUP\n<i class='kb kb-Arrows-Up'></i>",
+    "END\n<i class='kb kb-Arrows-Right'></i>"
+  ]
+]
   },
   "COLEMAK": {
     "URL": "http://www.keyboard-layout-editor.com/##@@_c=%23ff5c5c&a:7%3B&=ESC&_c=%23cccccc&a:5%3B&=!%0A1&=%2F@%0A2&=%23%0A3&=$%0A4&=%25%0A5&=%5E%0A6&=%2F&%0A7&=*%0A8&=(%0A9&=)%0A0&=%2F_%0A-&=+%0A%2F=&=~%0A%60&=%7C%0A%5C%3B&@_a:7&w:1.5%3B&=Tab&=Q&=W&=F&=P&=G&=J&=L&=U&=Y&_a:5%3B&=%2F:%0A%2F%3B&=%7B%0A%5B&=%7D%0A%5D&_w:1.5%3B&=DEL%0ABACKSPC%3B&@_a:7&w:1.75%3B&=HYPER&=A&=R&=S&=T&=D&=H&=N&=E&=I&=O&_a:5%3B&=%22%0A'&_c=%231865c4&a:7&w:2.25%3B&=ENT%3B&@_c=%23cccccc&w:2.25%3B&=L-Shift&=Z&=X&=C&=V&=B&=K&=M&_a:5%3B&=%3C%0A,&=%3E%0A.&=%3F%0A%2F%2F&_a:7&w:1.75%3B&=R-Shift&_c=%2319bfbf&f:1%3B&=CHG%2F_LAY%3B&@_c=%23cccccc&f:3&w:1.25%3B&=Ctrl&_c=%2319bfbf&f:2&w:1.25%3B&=HLD%2F_KPD&_c=%23cccccc&f:3&w:1.25%3B&=ALT&_w:2.25%3B&=SPC&_c=%2319bfbf&f:2&w:1.25%3B&=HLD%2F_CPGRM&_c=%23cccccc&f:3&w:2.75%3B&=SPC&_c=%2319bfbf&f:1%3B&=HLD%2F_MED&_c=%23cccccc&a:5%3B&=HOME%0A%3Ci%20class%2F='kb%20kb-Arrows-Left'%3E%3C%2F%2Fi%3E&=PGDN%0A%3Ci%20class%2F='kb%20kb-Arrows-Down'%3E%3C%2F%2Fi%3E&=PGUP%0A%3Ci%20class%2F='kb%20kb-Arrows-Up'%3E%3C%2F%2Fi%3E&=END%0A%3Ci%20class%2F='kb%20kb-Arrows-Right'%3E%3C%2F%2Fi%3E",

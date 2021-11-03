@@ -9,7 +9,7 @@ BUILD_DIR = $(abspath $(HOME)/qmk_firmware/keyboards/dz60/keymaps)/$(KEYMAP_NAME
 	touch .python_is_ready
 
 keymap.c: app/render_keymap.py static/layers.json static/template_layout.j2 app/keycode_mapper.py .python_is_ready
-	PYTHONPATH=. python $<
+	PYTHONPATH=. python3 $<
 
 build: keymap.c rules.mk
 	mkdir -p $(BUILD_DIR)
