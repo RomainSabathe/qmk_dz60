@@ -117,3 +117,6 @@ as a layer" in the future.
 
 - Sending Unicode characters requires [IBus](https://wiki.archlinux.org/index.php/IBus#Installation) to be running on your system. Make sure it is running all the time!
 - One dependency I was lacking was [PyGObject](https://pygobject.readthedocs.io/en/latest/getting_started.html) (`pip install PyGObject --user`)
+- QMK requires the installation for `pycairo`, for this, ensure that:
+  - You have installed [pkg-config](https://stackoverflow.com/a/36440831).
+  - You have installed [cairo](https://www.cairographics.org/download/).
