@@ -4,9 +4,9 @@
 
 ![base_layer](static/media/base.jpg)
 
-## Colemak (tap on `CHG_LAY`)
+## AZERTY (tap on `CHG_LAY`)
 
-![colemak_layer](static/media/colemak.jpg)
+![azerty_layer](static/media/azerty.jpg)
 
 ## Programmer (hold `HLD_PGRM`)
 

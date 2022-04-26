@@ -1,5 +1,4 @@
 import re
-from binascii import hexlify
 from string import ascii_uppercase
 
 
@@ -21,20 +20,14 @@ def map_key(key, is_shift=False, layer_name=None):
         key = tuple(parts)
 
         if _is_simple_case(key):
-            return (
-                f"LSFT({_keycode_mapper(key)})"
-                if is_shift
-                else _keycode_mapper(key)
-            )
+            return f"LSFT({_keycode_mapper(key)})" if is_shift else _keycode_mapper(key)
         key = parts[0] if is_shift else parts[1]
         keycode = _keycode_mapper(key)
         if keycode in ["KC_LEFT", "KC_RIGHT", "KC_UP", "KC_DOWN"] and is_shift:
             return f"LSFT({keycode})"
         return keycode
 
-    return (
-        f"LSFT({_keycode_mapper(key)})" if is_shift else _keycode_mapper(key)
-    )
+    return f"LSFT({_keycode_mapper(key)})" if is_shift else _keycode_mapper(key)
 
 
 def _layer_dependent_mapping(key, is_shift=False, layer_name=None):
@@ -51,9 +44,7 @@ def _layer_dependent_mapping(key, is_shift=False, layer_name=None):
 
 
 def _get_unicode(char) -> str:
-    char = char.encode()
-    unicode = hexlify(char).decode().upper()
-    return f"0x{unicode}"
+    return hex(ord(char))
 
 
 def _to_lowercase(key):
@@ -81,8 +72,6 @@ def _keycode_mapper(key):
     if matches:
         return dict_keycode_mapper[matches.group("key")]
 
-    import ipdb; ipdb.set_trace()
-    pass
     raise Exception(f"Can't find QMK conversion for {key}")
 
 
@@ -216,16 +205,10 @@ dict_keycode_mapper = {
     ('"', "'"): "KC_QUOTE",
 }
 # Adding the common ASCII letters.
-dict_keycode_mapper.update(
-    {char.lower(): f"KC_{char}" for char in ascii_uppercase}
-)
+dict_keycode_mapper.update({char.lower(): f"KC_{char}" for char in ascii_uppercase})
 # Adding the F keys (F1, F2, etc.)
 dict_keycode_mapper.update({f"f{n}": f"KC_F{n}" for n in range(1, 13)})
 # Adding some unicode characters
-dict_keycode_mapper.update(
-    {char: f"UC({_get_unicode(char)})" for char in "àéèêç"}
-)
+dict_keycode_mapper.update({char: f"UC({_get_unicode(char)})" for char in "àéèêçù£"})
 
-C_CODE_SPACING = (
-    max(*[len(keycode) for keycode in dict_keycode_mapper.values()]) + 1
-)
+C_CODE_SPACING = max(*[len(keycode) for keycode in dict_keycode_mapper.values()]) + 1

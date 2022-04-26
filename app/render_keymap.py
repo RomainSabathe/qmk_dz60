@@ -60,7 +60,7 @@ def main():
                 unicode_input_mode=UNICODE_INPUT_MODE,
                 magic_key="MAGIC_KEY",
                 magic_key_layer_hold="OTHER",
-                magic_key_layer_tap="COLEMAK",
+                magic_key_layer_tap="AZERTY",
             )
         )
 
